@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSJ - Bingo</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <img src="logov1-300x300.png" alt="">
+    <label for="">BINGO</label>
+</header>
+<body onload="checkSavedSession()">
+    <div id="configContainer">
+        <div class="row">
+            <label for="">Quando iniciar um novo bingo o valor sugerido de bolas é 75, pois é o mais comum em cartelas.</label>
+        </div>
+        <div class="row">
+            <input id="qtdNum" type="number" placeholder="Quantidade Números">
+            <button onclick="startBingo()">start new bingo</button>
+        </div>
+    </div>
+    <button onclick="showConfig()">show/hide config</button>
+    <button onclick="callBall()">Call ball</button>
+    <div id="lcn" >Last Called Number <small class="bingo_ball" id="lastCallNumber"></small></div>
+    <div id="ballsContainer"></div>
+</body>
+
+</html>
